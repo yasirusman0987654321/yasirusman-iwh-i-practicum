@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    title= title
+  body
+    h1 Projects
+    p
+      a(href="/update-cobj") Add New Project
+    table
+      thead
+        tr
+          th Project Name
+          th Source Detail 2
+          th Source Detail 3
+      tbody
+        each item in data
+          tr
+            td= item.properties.project_name
+            td= item.properties.hs_object_source_detail_2
+            td= item.properties.hs_object_source_detail_3
