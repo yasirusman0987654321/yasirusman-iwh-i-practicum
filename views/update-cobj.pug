@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+  head
+    title= title
+  body
+    h1 Add Project
+    form(action="/update-cobj" method="post")
+      label(for="project_name") Project Name:
+      input(type="text" name="project_name" id="project_name" required)
+      br
+      label(for="hs_object_source_detail_2") Source Detail 2:
+      input(type="text" name="hs_object_source_detail_2" id="hs_object_source_detail_2")
+      br
+      label(for="hs_object_source_detail_3") Source Detail 3:
+      input(type="text" name="hs_object_source_detail_3" id="hs_object_source_detail_3")
+      br
+      button(type="submit") Submit
+    p
+      a(href="/") Home
